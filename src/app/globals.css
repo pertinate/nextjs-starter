@@ -1,0 +1,276 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-feature-settings: "rlig" 1, "calt" 1;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Onyx Accent Text Colors */
+  .text-onyx-amber {
+    color: hsl(35 85% 42%);
+  }
+  .text-onyx-amber-light {
+    color: hsl(43 96% 56%);
+  }
+  .text-onyx-amber-dark {
+    color: hsl(26 90% 32%);
+  }
+
+  .text-onyx-copper {
+    color: hsl(18 75% 40%);
+  }
+  .text-onyx-copper-light {
+    color: hsl(24 100% 63%);
+  }
+  .text-onyx-copper-dark {
+    color: hsl(14 65% 32%);
+  }
+
+  .text-onyx-gold {
+    color: hsl(42 90% 38%);
+  }
+  .text-onyx-gold-light {
+    color: hsl(47 100% 62%);
+  }
+  .text-onyx-gold-dark {
+    color: hsl(34 80% 30%);
+  }
+
+  .text-onyx-teal {
+    color: hsl(173 58% 39%);
+  }
+  .text-onyx-teal-light {
+    color: hsl(172 66% 50%);
+  }
+  .text-onyx-teal-dark {
+    color: hsl(175 64% 26%);
+  }
+
+  /* Background variants - solid colors */
+  .bg-onyx-amber {
+    background-color: hsl(35 85% 42%);
+  }
+  .bg-onyx-copper {
+    background-color: hsl(18 75% 40%);
+  }
+  .bg-onyx-gold {
+    background-color: hsl(42 90% 38%);
+  }
+  .bg-onyx-teal {
+    background-color: hsl(173 58% 39%);
+  }
+
+  /* Background variants with opacity - using rgba for proper transparency */
+  .bg-onyx-amber-80 {
+    background-color: hsla(35, 85%, 42%, 0.8);
+  }
+  .bg-onyx-amber-60 {
+    background-color: hsla(35, 85%, 42%, 0.6);
+  }
+  .bg-onyx-amber-40 {
+    background-color: hsla(35, 85%, 42%, 0.4);
+  }
+  .bg-onyx-amber-20 {
+    background-color: hsla(35, 85%, 42%, 0.2);
+  }
+
+  .bg-onyx-copper-80 {
+    background-color: hsla(18, 75%, 40%, 0.8);
+  }
+  .bg-onyx-copper-60 {
+    background-color: hsla(18, 75%, 40%, 0.6);
+  }
+  .bg-onyx-copper-40 {
+    background-color: hsla(18, 75%, 40%, 0.4);
+  }
+  .bg-onyx-copper-20 {
+    background-color: hsla(18, 75%, 40%, 0.2);
+  }
+
+  .bg-onyx-gold-80 {
+    background-color: hsla(42, 90%, 38%, 0.8);
+  }
+  .bg-onyx-gold-60 {
+    background-color: hsla(42, 90%, 38%, 0.6);
+  }
+  .bg-onyx-gold-40 {
+    background-color: hsla(42, 90%, 38%, 0.4);
+  }
+  .bg-onyx-gold-20 {
+    background-color: hsla(42, 90%, 38%, 0.2);
+  }
+
+  .bg-onyx-teal-80 {
+    background-color: hsla(173, 58%, 39%, 0.8);
+  }
+  .bg-onyx-teal-60 {
+    background-color: hsla(173, 58%, 39%, 0.6);
+  }
+  .bg-onyx-teal-40 {
+    background-color: hsla(173, 58%, 39%, 0.4);
+  }
+  .bg-onyx-teal-20 {
+    background-color: hsla(173, 58%, 39%, 0.2);
+  }
+
+  /* Border variants */
+  .border-onyx-amber {
+    border-color: hsl(35 85% 42%);
+  }
+  .border-onyx-copper {
+    border-color: hsl(18 75% 40%);
+  }
+  .border-onyx-gold {
+    border-color: hsl(42 90% 38%);
+  }
+  .border-onyx-teal {
+    border-color: hsl(173 58% 39%);
+  }
+
+  /* Border variants with opacity */
+  .border-onyx-amber-20 {
+    border-color: hsla(35, 85%, 42%, 0.2);
+  }
+  .border-onyx-copper-20 {
+    border-color: hsla(18, 75%, 40%, 0.2);
+  }
+  .border-onyx-gold-20 {
+    border-color: hsla(42, 90%, 38%, 0.2);
+  }
+  .border-onyx-teal-20 {
+    border-color: hsla(173, 58%, 39%, 0.2);
+  }
+
+  /* Square design utilities */
+  .square {
+    border-radius: 2px !important;
+  }
+
+  .square-sm {
+    border-radius: 1px !important;
+  }
+
+  .square-none {
+    border-radius: 0 !important;
+  }
+
+  /* Override specific component border radius */
+  .bg-onyx-amber,
+  .bg-onyx-copper,
+  .bg-onyx-gold,
+  .bg-onyx-teal,
+  .bg-onyx-amber-80,
+  .bg-onyx-amber-60,
+  .bg-onyx-amber-40,
+  .bg-onyx-amber-20,
+  .bg-onyx-copper-80,
+  .bg-onyx-copper-60,
+  .bg-onyx-copper-40,
+  .bg-onyx-copper-20,
+  .bg-onyx-gold-80,
+  .bg-onyx-gold-60,
+  .bg-onyx-gold-40,
+  .bg-onyx-gold-20,
+  .bg-onyx-teal-80,
+  .bg-onyx-teal-60,
+  .bg-onyx-teal-40,
+  .bg-onyx-teal-20 {
+    border-radius: 2px !important;
+  }
+
+  /* Make cards and containers square */
+  .card {
+    border-radius: 2px !important;
+  }
+
+  /* Make buttons square except when specifically rounded */
+  button:not(.rounded-button) {
+    border-radius: 2px !important;
+  }
+
+  /* Make inputs and form elements square */
+  input,
+  select,
+  textarea {
+    border-radius: 2px !important;
+  }
+
+  /* Make badges square */
+  .badge {
+    border-radius: 2px !important;
+  }
+}
+
+@layer base {
+  :root {
+    /* Light Onyx Theme */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    /* Dark Onyx Theme */
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
