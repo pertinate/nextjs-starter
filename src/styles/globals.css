@@ -148,63 +148,7 @@ body {
   }
 
   /* Square design utilities */
-  .square {
-    border-radius: 2px !important;
-  }
-
-  .square-sm {
-    border-radius: 1px !important;
-  }
-
-  .square-none {
-    border-radius: 0 !important;
-  }
-
-  /* Override specific component border radius */
-  .bg-onyx-amber,
-  .bg-onyx-copper,
-  .bg-onyx-gold,
-  .bg-onyx-teal,
-  .bg-onyx-amber-80,
-  .bg-onyx-amber-60,
-  .bg-onyx-amber-40,
-  .bg-onyx-amber-20,
-  .bg-onyx-copper-80,
-  .bg-onyx-copper-60,
-  .bg-onyx-copper-40,
-  .bg-onyx-copper-20,
-  .bg-onyx-gold-80,
-  .bg-onyx-gold-60,
-  .bg-onyx-gold-40,
-  .bg-onyx-gold-20,
-  .bg-onyx-teal-80,
-  .bg-onyx-teal-60,
-  .bg-onyx-teal-40,
-  .bg-onyx-teal-20 {
-    border-radius: 2px !important;
-  }
-
-  /* Make cards and containers square */
-  .card {
-    border-radius: 2px !important;
-  }
-
-  /* Make buttons square except when specifically rounded */
-  button:not(.rounded-button) {
-    border-radius: 2px !important;
-  }
-
-  /* Make inputs and form elements square */
-  input,
-  select,
-  textarea {
-    border-radius: 2px !important;
-  }
-
-  /* Make badges square */
-  .badge {
-    border-radius: 2px !important;
-  }
+ 
 }
 
 @layer base {

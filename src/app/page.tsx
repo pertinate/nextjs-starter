@@ -46,7 +46,9 @@ export default function Home() {
                         <Button variant='secondary'>Secondary</Button>
                         <Button
                             variant='outline'
-                            className='border-onyx-amber text-onyx-amber hover:bg-onyx-amber hover:text-white rounded-full'
+                            border={'amber'}
+                            rounded={'lg'}
+                            // className='border-onyx-amber text-onyx-amber hover:bg-onyx-amber hover:text-white rounded-full'
                         >
                             Accent Outline
                         </Button>
